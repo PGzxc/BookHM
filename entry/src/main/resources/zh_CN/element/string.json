@@ -27,6 +27,18 @@
     {
       "name": "bottom_text_me",
       "value": "我的"
+    },
+    {
+      "name": "setting_list_account",
+      "value": "我的账户"
+    },
+    {
+      "name": "setting_list_record",
+      "value": "读书记录"
+    },
+    {
+      "name": "setting_list_setting",
+      "value": "设置"
     }
   ]
 }

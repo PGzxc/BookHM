@@ -29,3 +29,6 @@
 ### 3.4 v4.0
 * 读书页面
 * 从ApiResponse中的bookVoiceListData切换tab时，设置页面数据
+
+### 3.5 v5.0
+* 我的页面

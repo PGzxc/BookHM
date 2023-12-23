@@ -27,6 +27,18 @@
     {
       "name": "bottom_text_me",
       "value": "Me"
+    },
+    {
+      "name": "setting_list_account",
+      "value": "My Account"
+    },
+    {
+      "name": "setting_list_record",
+      "value": "Read Record"
+    },
+    {
+      "name": "setting_list_setting",
+      "value": "Setting"
     }
   ]
 }

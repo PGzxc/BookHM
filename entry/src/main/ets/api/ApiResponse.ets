@@ -1,4 +1,5 @@
 import { Book } from '../bean/ReadBean';
+import SettingItem from '../bean/SettingItem';
 import { BookVoice, BookVoiceList } from '../bean/VoiceBean';
 
 export default class ApiResponse {
@@ -178,4 +179,10 @@ export default class ApiResponse {
       new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
     ],
   ]
+  //4-我的
+  static readonly getSettingListData: SettingItem[] = [
+      new SettingItem($r('app.string.setting_list_account'), $r("app.media.ic_account"), null),
+      new SettingItem($r('app.string.setting_list_record'), $r("app.media.ic_record"), null),
+      new SettingItem($r('app.string.setting_list_setting'), $r("app.media.ic_setting"), null),
+    ];
 }
