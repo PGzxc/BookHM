@@ -1,18 +1,18 @@
 /**
- * @desc：1-书架-默认
+ * @desc：2-书架-进度
  */
 import ApiResponse from '../../api/ApiResponse'
 import Constants from '../../utils/Constants'
-import BookDefaultItem from '../../view/BookDefaultItem'
+import BookRateItem from '../BookRateItem'
 
 @Component
-export default struct BookDefault {
+export default struct BookRate {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.readListData, (item, index) => {
+        ForEach(ApiResponse.bookRateListData, (item, index) => {
           GridItem() {
-            BookDefaultItem({ item })
+            BookRateItem({ item })
           }
         })
       }

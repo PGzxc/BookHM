@@ -1,9 +1,9 @@
 import Constants from '../utils/Constants'
-import BookCategory from './bookcategory/BookCategory'
-import BookDefault from './bookcategory/BookDefault'
-import BookRate from './bookcategory/BookRate'
-import BookRecommend from './bookcategory/BookRecommend'
-import BookVip from './bookcategory/BookVip'
+import BookCategory from '../view/bookcategory/BookCategory'
+import BookDefault from '../view/bookcategory/BookDefault'
+import BookRate from '../view/bookcategory/BookRate'
+import BookRecommend from '../view/bookcategory/BookRecommend'
+import BookVip from '../view/bookcategory/BookVip'
 
 @Preview
 @Component

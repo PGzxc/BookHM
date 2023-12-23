@@ -1,23 +1,23 @@
 /**
- * @desc：3-书架-推荐
+ * @desc：5-书架-付费
  */
 import ApiResponse from '../../api/ApiResponse'
 import Constants from '../../utils/Constants'
-import BookRateItem from '../../view/BookRateItem'
+import ReadItem from '../ReadItem'
 
 @Component
-export default struct BookRecommend {
+export default struct BookVip {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.bookRecommendListData, (item, index) => {
+        ForEach(ApiResponse.bookVipData, (item, index) => {
           GridItem() {
-            BookRateItem({ item })
+            ReadItem({ item })
           }
         })
       }
       .width('100%')
-      .height('100%')
+      .height('85%')
       .columnsTemplate('1fr 1fr 1fr')
       .columnsGap(5)
       .rowsGap(5)

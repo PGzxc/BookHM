@@ -1,4 +1,5 @@
 import { Book } from '../bean/ReadBean';
+import { BookVoice, BookVoiceList } from '../bean/VoiceBean';
 
 export default class ApiResponse {
   static readonly readListData: Book[] = [
@@ -23,14 +24,13 @@ export default class ApiResponse {
     new Book($r('app.media.ic_book_pudongtushuguan'), "浦东图书馆内涵发展案例集", "已读2%"),
     new Book($r('app.media.ic_book_chengshiwenhuagailun'), "城市文化概论", "已读3%"),
   ]
-
   //2-书架
   //2-1
   static readonly bookRateListData: Book[] = [
     new Book($r('app.media.ic_book_suanfa'), "尚未阅读", "29本"),
     new Book($r('app.media.ic_book_nankaiyuyan'), "已读完", "1本"),
   ]
-   //2-3
+  //2-3
   static readonly bookRecommendListData: Book[] = [
 
     new Book($r('app.media.ic_book_cyuyan'), "神作", "推荐>=90%"),
@@ -55,5 +55,127 @@ export default class ApiResponse {
     new Book($r('app.media.ic_book_suanfa'), "按章购买", "2本"),
     new Book($r('app.media.ic_book_pudongtushuguan'), "已购买", "3本%"),
 
+  ]
+  //3-读书
+  //3-1-Tab
+  static readonly voiceTabData: string[] = [
+    "推荐",
+    "历史",
+    "心理学",
+    "个人成长",
+    "男生小说",
+    "女生小说",
+    "商业经济",
+    "精品小说",
+    "文学",
+    "哲学",
+    "艺术设计",
+    "生活",
+    "文化",
+    "政治军事",
+    "曲艺杂谈",
+    "儿童教育"
+  ]
+  //3-2-Data
+  static readonly bookVoiceListData: BookVoice[][] = [
+  //1-推荐
+    [
+      new BookVoice($r('app.media.ic_book_suanfa'), "数据结构预算法", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_java'), "Java Web从入门到精通", "", "讲书.1.8万人收听"),
+    ],
+    //2-历史
+    [
+      new BookVoice($r('app.media.ic_book_zhongguotushuqingbao'), "中国图书情报知识图谱研究", "原著:关丁", "讲书. 1153.5万人收听"),
+      new BookVoice($r('app.media.ic_book_pudongtushuguan'), "浦东图书馆内涵发展案例集", "原著:杨阳洋", "486.9万人收听"),
+
+    ],
+    //3-心理学
+    [
+      new BookVoice($r('app.media.ic_book_shufadegushi'), "书法的故事", "原著:克里斯多福.孟", "讲书. 126.8万次收听"),
+      new BookVoice($r('app.media.ic_book_nankaiyuyan'), "南开语言学刊", "原著:中村恒子 奥田宏美", "讲书. 57.2万次收听"),
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:罗兰.米勒", "讲书. 20万次收听"),
+
+    ],
+    //4-个人成长
+    [
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "主播:老梁", "625.5万人收听"),
+      new BookVoice($r('app.media.ic_book_guiguzhihuo'), "硅谷之火", "主播:冯唐", "21.7万人收听"),
+      new BookVoice($r('app.media.ic_book_huochushengming'), "活出生命的意义", "", "303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "", "256.3万人收听"),
+
+    ],
+    //5-男生小说
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //6-女生小说
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //7-商业经济
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //8-精品小说
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //9-文学
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //10-哲学
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //11-艺术设计
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //12-生活
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //13-文化
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //14-政治军事
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //15-曲艺杂谈
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
+    //16-儿童教育
+    [
+      new BookVoice($r('app.media.ic_book_hongloumeng'), "红楼梦", "主播:孙继东", "讲书. 303.2万人收听"),
+      new BookVoice($r('app.media.ic_book_cyuyan'), "C语言", "主播：徐凯", "622.5万人收听"),
+      new BookVoice($r('app.media.ic_book_gangtie'), "钢铁是怎样炼成的", "", "讲书.1.8万人收听"),
+    ],
   ]
 }

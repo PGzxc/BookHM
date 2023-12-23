@@ -3,7 +3,7 @@
  */
 import ApiResponse from '../../api/ApiResponse'
 import Constants from '../../utils/Constants'
-import ReadItem from '../../view/ReadItem'
+import ReadItem from '../ReadItem'
 
 @Component
 export default struct BookCategory {

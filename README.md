@@ -25,3 +25,7 @@
 ### 3.3 v3.0
 * 书架页面
 * 各Tab及对应页面
+
+### 3.4 v4.0
+* 读书页面
+* 从ApiResponse中的bookVoiceListData切换tab时，设置页面数据
