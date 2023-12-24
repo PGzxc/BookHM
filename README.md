@@ -2,6 +2,11 @@
 1- 项目说明
 * 阅读类书籍app
 
+2-项目预览
+
+| ![][hm-read-1] | ![][hm-read-2] |![][hm-read-3]|
+| -------------- | -------------- | ------------ |
+| ![][hm-read-4] | ![][hm-read-5] |![][hm-read-6]|
 
 ## 一 开发环境
 
@@ -32,3 +37,10 @@
 
 ### 3.5 v5.0
 * 我的页面
+
+[hm-read-1]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_1_read.png
+[hm-read-2]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_2_book_pro.png
+[hm-read-3]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_3_book_rec.png
+[hm-read-4]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_4_voice_rec.png
+[hm-read-5]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_5_voice_per.png
+[hm-read-6]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_6_me.png
