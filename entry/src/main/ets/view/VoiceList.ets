@@ -25,7 +25,7 @@ export default struct VoiceList {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(this.voiceBookData, (item, index) => {
+        ForEach(this.voiceBookData, (item:BookVoice, index) => {
           GridItem() {
             VoiceItem({ item })
           }

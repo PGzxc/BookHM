@@ -7,8 +7,8 @@ import Constants from '../utils/Constants'
 @Preview
 @Component
 export default struct MeBar {
-  scanEvent: (event: ClickEvent) => void
-  msgEvent: (event: ClickEvent) => void
+  scanEvent: (event: ClickEvent) => void = ()=>{}
+  msgEvent: (event: ClickEvent) => void = ()=>{}
 
   build() {
     //1-头部

@@ -21,7 +21,7 @@ export default struct MePage {
               SettingCell({ item: settingItem })
             }
             .height($r('app.float.48vp'))
-          }, item => JSON.stringify(item))
+          }, (item: SettingItem) => JSON.stringify(item))
         }
         .onClick(() => {})
         .backgroundColor($r('app.color.white_smoke'))

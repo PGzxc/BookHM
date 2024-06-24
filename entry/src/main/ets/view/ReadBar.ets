@@ -7,10 +7,10 @@ import Constants from '../utils/Constants'
 @Preview
 @Component
 export default struct ReadBar {
-  searchEvent: (event: ClickEvent) => void
-  moreEvent: (event: ClickEvent) => void
-  checkedEvent: (event: ClickEvent) => void
-  giftEvent: (event: ClickEvent) => void
+  searchEvent: (event: ClickEvent) => void = ()=>{}
+  moreEvent: (event: ClickEvent) => void = ()=>{}
+  checkedEvent: (event: ClickEvent) => void = ()=>{}
+  giftEvent: (event: ClickEvent) => void = ()=>{}
 
   build() {
     Column(){

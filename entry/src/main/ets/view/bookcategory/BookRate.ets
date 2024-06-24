@@ -2,6 +2,7 @@
  * @desc：2-书架-进度
  */
 import ApiResponse from '../../api/ApiResponse'
+import { Book } from '../../bean/ReadBean'
 import Constants from '../../utils/Constants'
 import BookRateItem from '../BookRateItem'
 
@@ -10,7 +11,7 @@ export default struct BookRate {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.bookRateListData, (item, index) => {
+        ForEach(ApiResponse.bookRateListData, (item:Book, index) => {
           GridItem() {
             BookRateItem({ item })
           }

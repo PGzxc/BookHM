@@ -2,6 +2,7 @@
  * @desc：5-书架-付费
  */
 import ApiResponse from '../../api/ApiResponse'
+import { Book } from '../../bean/ReadBean'
 import Constants from '../../utils/Constants'
 import ReadItem from '../ReadItem'
 
@@ -10,7 +11,7 @@ export default struct BookVip {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.bookVipData, (item, index) => {
+        ForEach(ApiResponse.bookVipData, (item:Book, index) => {
           GridItem() {
             ReadItem({ item })
           }

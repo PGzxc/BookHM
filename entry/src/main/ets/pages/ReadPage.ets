@@ -1,4 +1,5 @@
 import ApiResponse from '../api/ApiResponse'
+import { Book } from '../bean/ReadBean';
 import Constants from '../utils/Constants'
 import ReadBar from '../view/ReadBar'
 import ReadItem from '../view/ReadItem';
@@ -23,7 +24,7 @@ export default struct ReadPage {
     Column({ space: 0 }) {
       ReadBar({ searchEvent: this.searchClick, moreEvent: this.moreClick })
       Grid(this.scroller) {
-        ForEach(ApiResponse.readListData, (item, index) => {
+        ForEach(ApiResponse.readListData, (item:Book, index) => {
           GridItem() {
             ReadItem({ item })
           }

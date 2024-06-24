@@ -7,9 +7,9 @@ import Constants from '../utils/Constants'
 @Preview
 @Component
 export default struct BookRateItem {
-  item: Book
-  searchEvent: (event: ClickEvent) => void
-  moreEvent: (event: ClickEvent) => void
+  item: Book = new Book()
+  searchEvent: (event: ClickEvent) => void = ()=>{}
+  moreEvent: (event: ClickEvent) => void = ()=>{}
 
   build() {
     Column() {

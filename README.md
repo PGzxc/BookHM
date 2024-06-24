@@ -38,6 +38,11 @@
 ### 3.5 v5.0
 * 我的页面
 
+### 3.6 v6.0
+
+* api9升级到api10
+* [api工程迁移](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides-V5/ide-integrated-project-migration-0000001900435341-V5)
+
 [hm-read-1]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_1_read.png
 [hm-read-2]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_2_book_pro.png
 [hm-read-3]:https://jsd.onmicrosoft.cn/gh/PGzxc/CDN/blog-resume/hm_read_3_book_rec.png

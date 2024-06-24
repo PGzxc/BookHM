@@ -2,6 +2,7 @@
  * @desc：3-书架-推荐
  */
 import ApiResponse from '../../api/ApiResponse'
+import { Book } from '../../bean/ReadBean'
 import Constants from '../../utils/Constants'
 import BookRateItem from '../BookRateItem'
 
@@ -10,7 +11,7 @@ export default struct BookRecommend {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.bookRecommendListData, (item, index) => {
+        ForEach(ApiResponse.bookRecommendListData, (item:Book, index) => {
           GridItem() {
             BookRateItem({ item })
           }

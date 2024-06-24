@@ -2,6 +2,7 @@
  * @desc：1-书架-默认
  */
 import ApiResponse from '../../api/ApiResponse'
+import { Book } from '../../bean/ReadBean'
 import Constants from '../../utils/Constants'
 import BookDefaultItem from '../BookDefaultItem'
 
@@ -10,7 +11,7 @@ export default struct BookDefault {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.readListData, (item, index) => {
+        ForEach(ApiResponse.readListData, (item:Book, index) => {
           GridItem() {
             BookDefaultItem({ item })
           }

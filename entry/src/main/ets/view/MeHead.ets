@@ -4,8 +4,8 @@ import MeBar from './MeBar'
 @Preview
 @Component
 export default struct MeHead {
-  scanEvent: (event: ClickEvent) => void
-  msgEvent: (event: ClickEvent) => void
+  scanEvent: (event: ClickEvent) => void = ()=>{}
+  msgEvent: (event: ClickEvent) => void = ()=>{}
 
   build() {
     //1-头部

@@ -4,11 +4,11 @@ import Constants from '../utils/Constants'
 @Preview
 @Component
 export default struct SettingCell {
-  searchEvent: (event: ClickEvent) => void
-  moreEvent: (event: ClickEvent) => void
-  checkedEvent: (event: ClickEvent) => void
-  giftEvent: (event: ClickEvent) => void
-  item: SettingItem
+  searchEvent: (event: ClickEvent) => void = ()=>{}
+  moreEvent: (event: ClickEvent) => void = ()=>{}
+  checkedEvent: (event: ClickEvent) => void = ()=>{}
+  giftEvent: (event: ClickEvent) => void = ()=>{}
+  item: SettingItem = new SettingItem()
 
   build() {
     Row() {

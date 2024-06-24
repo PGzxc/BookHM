@@ -181,8 +181,11 @@ export default class ApiResponse {
   ]
   //4-我的
   static readonly getSettingListData: SettingItem[] = [
-      new SettingItem($r('app.string.setting_list_account'), $r("app.media.ic_account"), null),
-      new SettingItem($r('app.string.setting_list_record'), $r("app.media.ic_record"), null),
-      new SettingItem($r('app.string.setting_list_setting'), $r("app.media.ic_setting"), null),
+      new SettingItem($r('app.string.setting_list_account'), $r("app.media.ic_account"), $r(null
+      )),
+      new SettingItem($r('app.string.setting_list_record'), $r("app.media.ic_record"), $r(null
+      )),
+      new SettingItem($r('app.string.setting_list_setting'), $r("app.media.ic_setting"), $r(null
+      )),
     ];
 }

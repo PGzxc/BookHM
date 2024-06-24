@@ -7,12 +7,12 @@ export class BookVoiceList {
 }
 
 export class BookVoice {
-  icon: Resource;
-  bookName: string;
-  bookAuthor: string;
-  bookRead: string;
+  icon: Resource = $r(null);
+  bookName: string = '';
+  bookAuthor: string = '';
+  bookRead: string = '';
 
-  constructor(icon: Resource, bookName: string, bookAuthor: string, bookRead: string) {
+  constructor(icon: Resource = $r(null), bookName: string = '', bookAuthor: string = '', bookRead: string = '') {
     this.icon = icon;
     this.bookName = bookName;
     this.bookAuthor = bookAuthor;

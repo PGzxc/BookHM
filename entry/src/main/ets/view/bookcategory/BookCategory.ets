@@ -2,6 +2,7 @@
  * @desc：4-书架-分类
  */
 import ApiResponse from '../../api/ApiResponse'
+import { Book } from '../../bean/ReadBean'
 import Constants from '../../utils/Constants'
 import ReadItem from '../ReadItem'
 
@@ -10,7 +11,7 @@ export default struct BookCategory {
   build() {
     Column({ space: 0 }) {
       Grid() {
-        ForEach(ApiResponse.bookCategoryData, (item, index) => {
+        ForEach(ApiResponse.bookCategoryData, (item:Book, index) => {
           GridItem() {
             ReadItem({ item })
           }
